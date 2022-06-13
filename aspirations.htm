@@ -1,0 +1,181 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #92a7cb;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #eeecc3;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #eeecc3;
+  color: black;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 95%;
+   background-color:#92a7cb;
+   color: black;
+   text-align: center;
+   font-size: 15px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #E0E0E0;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+
+.media {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+p {
+  text-align: center;
+  letter-spacing:1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+</style>
+</head>
+
+<body>
+<body style="background-color: #b8d6ef;">
+  <br>
+  <br>
+  <br>
+
+  <h1>My Aspirations</h1>
+  <br>
+
+<div class="topnav">
+<img src="images/logo2.gif" width="260" height="60"/>
+<a href="index.htm">Home</a>
+<a href="interests.htm">My Interests</a>
+<a class="active" href="aspirations.htm">My Aspirations</a>
+<a href="people.htm">Important People</a>
+<a href="Contact.htm">Contact Me</a>
+</div>
+
+
+
+<div class="wrapper">
+<div class="media">
+<div class="layer">
+    <p>Marine Biology</p>
+  </div>
+<img src="/Users/elianahastings/Documents/webDev/final website/images/marinebio.jpg" width="500" height="500" alt="marinebio" />
+</div>
+ <div class="media">
+<div class="layer">
+    <p>Travel more + new experiences</p>
+  </div>
+<img src="/Users/elianahastings/Documents/webDev/final website/images/globe.gif" width="489" height="489" alt="globe" />
+</div>
+   <div class="media">
+<div class="layer">
+    <p>good grades on my finals</p>
+  </div>
+<img src="/Users/elianahastings/Documents/webDev/final website/images/grade.jpg" width="500" height="500" alt="grades" />
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<center>
+<div class="footer">
+  <p>elianahastings@gmail.com
+  Published May 3, 2022 7:00:00 AM</p>
+</div>
+</center>
+
+</body>
+</html>
